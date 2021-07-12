@@ -1,0 +1,339 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+		/*Header start*/
+.header{
+	width: 100%;
+	position: relative;
+	background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,0.6)),url(img/36.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	
+}
+
+.header:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.container{
+	width: 1200px;
+	margin: 0px auto;
+}
+.logo{
+	width: 30%;
+	float: left;
+}
+.logo img{
+	width: 30%;
+	float: left;
+	padding: 15px;
+}
+
+.menu{
+	float: left;
+	width: 70%;
+}
+.menu ul{
+	list-style: none;
+	text-align: right;
+}
+.menu ul li{
+	display: inline-block;
+}
+.menu ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding: 32px 20px;
+	color: #fff;
+	transition: .5s ease;
+}
+.menu ul li a:hover{
+	color:  #10C9C3;
+}
+.himg{
+
+}
+.hbody {
+	top:50%;
+	left:50%;
+	right:0%;
+	transform: translate(-50%,-20%);
+	text-align:center;
+	width:60%;
+	color: white;
+	position: absolute;
+}
+.hbody h1{
+	font-size: 35px;
+	letter-spacing: 1px;
+	padding: 30px 0px;
+	line-height: 1.5em;
+	text-transform: uppercase;
+}
+
+.hbody a{
+	color:#fff;
+	height: 70px;
+	width: 70px;
+	transition: .5s ease;
+	padding: 35px;
+	line-height: 70px;
+	text-align: center;
+	background: #10C9C3;
+	border-radius: 50%;
+}
+.hbody a:hover{
+	padding: 32px;
+}
+/*header End*/
+/*about section start*/
+
+.about{
+	background: #141414;
+	color: #fff;
+	padding: 65px 0;
+	width: 100%;
+}
+.about-content{
+	width: 65%;
+	margin: auto;
+	text-align: center;
+}
+.about-content h1{
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 1.7em;
+}
+.about-content p{
+	padding: 20px 0;
+	font-size: 20px;
+	color: lightgray;
+	line-height: 1.7em;
+}
+/*about section end*/
+/*product section start*/
+.products{
+	width: 100%;
+	height: 600px;
+}
+.product{
+	position: relative;
+	width: 33.33%;
+	float: left;
+	height: 600px;
+	overflow: hidden;
+}
+/*.product .img{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}*/
+.product  img{
+	width: 100%;
+	height: 100%;
+}
+.product .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #10C9C3;
+	opacity: 0;
+	transition: .7s;
+}
+.product:hover .overlay{
+	opacity: .9;
+}
+.overlay-con h3{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 20px;
+}
+.overlay-con h2{
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 27px;
+	padding: 10px
+}
+.overlay-con{
+	position: absolute;
+	top: 60%;
+	text-align: center;
+	left: 50%;
+	color: #fff;
+	transform: translate(-50%,-50%);
+	transition: .7s;
+	opacity: 0;
+}
+.product:hover .overlay-con{
+	opacity: 1;
+	top: 50%;
+}
+
+/*product section end*/
+/*let's talk section start*/
+
+.about-let{
+	background: #fff;
+	color: #141414;
+	padding: 70px 0;
+	width: 100%;
+}
+.about-content-let{
+	width: 57%;
+	margin: auto;
+	text-align: center;
+}
+.about-content-let h1{
+	font-size: 30px;
+	padding-top: 50px;
+	font-weight: 500;
+	line-height: 1.7em;
+}
+.about-content-let p{
+	padding: 30px 0;
+	font-size: 18px;
+	color: #141414;
+	line-height: 1.5em;
+}
+.about-content-let a{
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 17px 35px;
+	color: #fff;
+	transition: 1s ease;
+	background: #10C9C3;
+}
+.about-content-let a:hover{
+	background: #000;
+}
+
+/*let's talk section end*/
+/*footer section start*/
+
+.footer-main{
+	padding: 80px 0;
+	overflow: hidden;
+	width: 100%;
+	background: #000;
+	color: lightgray;
+}
+.footer-right{
+	float: left;
+	width: 40%;
+}
+.footer-right h1 {
+    font-size: 24px;
+}
+
+.footer-right p {
+    font-size: 17px;
+    line-height: 1.5em;
+    width: 50%;
+    padding: 24px 0;
+}
+.footer-left{
+	float: left;
+	width: 60%;
+}
+.footer-left .footer-div{
+	overflow: hidden;
+	width: 100%;
+}
+.footer-left .footer-div .first{
+	float: left;
+	width: 35%;
+}
+.footer-left .footer-div .first ul li{
+	display: inline-block;
+	padding-bottom: 10px;
+}
+.footer-left .footer-div .first ul li a:hover{
+	color: gray;
+}
+.footer-left .footer-div .first ul li a{
+	color: lightgray;
+	display: inline-block;
+	transition: .3s;
+	font-size: 17px;
+	text-transform: capitalize;
+}
+.footer-left .footer-div .third{
+	float: left;
+	width: 25%;
+}
+
+.footer-left .footer-div .third ul li{
+	display: block;
+	padding-bottom: 10px;
+	width: 40%;
+	padding-left: 106px;
+}
+.footer-left .footer-div .third ul li a{
+	color: lightgray;
+	text-transform: capitalize;
+	display: inline-block;
+	transition: .3s;
+	font-size: 17px;
+	
+}
+.footer-left .footer-div .second{
+	width: 30%;
+	float: left;
+}
+.footer-left .footer-div .second .second-div{
+	overflow: hidden;
+	width: 100%;
+}
+.footer-left .footer-div .second .second-div .second1{
+	float: left;
+	width: 50%;
+}
+.footer-left .footer-div .second .second-div .second1 ul li{
+	display: block;
+	padding-bottom: 10px;
+}
+.footer-left .footer-div .second .second-div .second1 ul li a:hover{
+	color: gray;
+}
+.footer-left .footer-div .second .second-div .second1 ul li a{
+	color: lightgray;
+	display: inline-block;
+	text-transform: capitalize;
+	transition: .3s;
+	font-size: 17px;
+}
+.footer-left .footer-div .second .second-div .second2{
+	float: left;
+	width: 50%;
+}
+.footer-left .footer-div .second .second-div .second2 ul li{
+	display: block;
+	padding-bottom: 10px;
+}.footer-left .footer-div .second .second-div .second2 ul li a:hover{
+	color: gray;
+}
+.footer-left .footer-div .second .second-div .second2 ul li a{
+	color: lightgray;
+	transition: .3s;
+	display: inline-block;
+	font-size: 17px;
+	text-transform: capitalize;
+}
+/*footer section end*/
